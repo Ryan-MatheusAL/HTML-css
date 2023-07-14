@@ -7,11 +7,18 @@
     <title>fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            height: 100vh;/*
             background-color: black;
             background-image: url('img/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*Shorthand Backgrond
+                color > img > position > repet > [size] > attachment
+            */
+            background: blue url('img/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
@@ -19,7 +26,7 @@
             background-color: white;
             padding: 10px;
             margin: auto;
-            width: 400px;
+            max-width: 400px;
             text-align: justify;
             border: 1px solid darkblue;
             border-radius: 15px;
