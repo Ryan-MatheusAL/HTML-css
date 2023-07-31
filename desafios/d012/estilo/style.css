@@ -3,100 +3,63 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
 }
 
-body{
-    background-image: url("../imagens/background001.jpg");
-    background-image: url("../imagens/background002.jpg");
-    background-position: center center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+html, body{
+    min-height: 100%;
+    background-color: darkgrey;
 }
 
 header{
     background-color: black;
-    text-align: center;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: white;
+    text-align: center;
 }
 
-header h1{
+header > h1{
     padding-top: 50px;
-    font-size: 5.5em;
-    font-style: oblique;
-
+    font-variant: small-caps;
+    /*text-transform: uppercase;*/
 }
 
-header p{
-    font-size: 1.2em;
-    color: gray;
+header > p{
     padding-bottom: 50px;
 }
 
-header p > a{
-    text-decoration: none;
+a {
     color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }
-
-header p > a:hover{
+a:hover{
     text-decoration: underline;
 }
 
-section.normal{
+section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
     line-height: 2em;
-    font-size: 3.5vw;
-    font-weight: bold;
-    font-style: oblique;
+    padding-left: 30px;
 }
 
-section.normal p{
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+section.normal{
+    background-color: white;
+    color: black;
 }
 
 section.imagem{
-    background-image: url("../imagens/background001.jpg");
-    background-position: center center;
-    background-attachment: scroll;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 30px;
-    line-height: 2em;
-    font-size: 3.5vw;
-    font-weight: bold;
-    font-style: oblique;
+    background-color: rgb(60, 60, 65);
+    color: white;
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.521);
-    color: white;
-    width: 41%;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px
+    background-color: rgba(0, 0, 0, 0.212);
+    width: 400px;
 }
 
 footer{
     background-color: black;
-}
-
-footer p{
     color: white;
-    text-align: center;
+    text-align: center;   
     padding: 10px;
-}
-
-footer p>a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-}
-
-footer p>a:hover{
-    text-decoration: underline;
 }
